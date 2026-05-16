@@ -28,7 +28,26 @@ Principios fundamentales del prompting.
 - Nunca usar un LLM como fuente de verdad sin verificar
 
 ---
-### ⏳ Lab 02 - Iterative
+
+### ✅ Lab 02 - Iterative
+Desarrollo iterativo de prompts para generar copy de marketing.
+
+**Concepto principal:** Ningún prompt es perfecto a la primera — lo importante es el proceso de refinamiento.
+
+**Ciclo iterativo:**
+1. Escribir un primer prompt
+2. Ver el resultado
+3. Identificar el problema
+4. Refinar el prompt
+5. Repetir hasta llegar al resultado deseado
+
+**Problemas resueltos:**
+- Problema 1: Texto muy largo → limitar número de palabras
+- Problema 2: Enfoque incorrecto → especificar audiencia y detalles técnicos
+- Problema 3: Falta de estructura → pedir formato HTML con tabla de dimensiones
+
+---
+
 ### ⏳ Lab 03 - Summarizing
 ### ⏳ Lab 04 - Inferring
 ### ⏳ Lab 05 - Transforming
