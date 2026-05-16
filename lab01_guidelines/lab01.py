@@ -116,3 +116,139 @@ comienza con un solo hilo solitario.
 
 response = get_completion(prompt)
 print(response)
+
+
+# ============================================
+# PRINCIPIO 2: Dale tiempo al modelo para pensar
+# ============================================
+
+# --------------------------------------------
+# Tactica 1: Especificar los pasos
+# --------------------------------------------
+text = f"""
+En un encantador pueblo, los hermanos Jack y Jill \
+salen en una busqueda para buscar agua de un pozo \
+en lo alto de una colina. Mientras subian, cantando \
+alegremente, Jack tropezó con una piedra y cayó \
+colina abajo, seguido de Jill. Aunque un poco golpeados, \
+la pareja regresó a casa. A pesar del percance, \
+su espiritu aventurero no se vio afectado y \
+continuaron explorando con alegria.
+"""
+
+prompt = f"""
+Realiza las siguientes acciones con el texto \
+delimitado por triple comillas:
+1 - Resume el texto en una oración.
+2 - Traduce el resumen al frances.
+3 - Lista cada nombre del resumen en frances.
+4 - Genera un objeto JSON con las siguientes claves: \
+nombres_franceses, numero_de_nombres.
+
+Separa tus respuestas con saltos de linea.
+
+\"\"\"{text}\"\"\"
+"""
+
+response = get_completion(prompt)
+print("Respuesta:")
+print(response)
+
+prompt_2 = f"""
+Realiza las siguientes acciones con el texto \
+delimitado por triple comillas:
+1 - Resume el texto en una oración.
+2 - Traduce el resumen al frances.
+3 - Lista cada nombre del resumen en frances.
+4 - Genera un objeto JSON con las siguientes claves: \
+nombres_franceses, numero_de_nombres.
+
+Usa el siguiente formato de respuesta:
+Texto: <texto original>
+Resumen: <resumen>
+Traduccion: <traduccion del resumen>
+Nombres: <lista de nombres en el resumen en frances>
+JSON: <json con nombres_franceses y numero_de_nombres>
+
+\"\"\"{text}\"\"\"
+"""
+
+response_2 = get_completion(prompt_2)
+print("Respuesta 2:")
+print(response_2)
+
+
+# --------------------------------------------
+# Tactica 2: Pedir al modelo que razone antes de concluir
+# --------------------------------------------
+prompt = f"""
+Determina si la solucion del estudiante es correcta o no.
+
+Pregunta:
+Estoy construyendo una instalacion de energia solar \
+y necesito ayuda para calcular los costos financieros.
+- El costo del terreno es de 100 dolares por pie cuadrado
+- Puedo comprar paneles solares por 250 dolares por pie cuadrado
+- Negocié un contrato de mantenimiento que me costara \
+100 dolares fijos al año, y 10 dolares adicionales \
+por pie cuadrado.
+¿Cual es el costo total para el primer año en funcion \
+del numero de pies cuadrados?
+
+Solucion del estudiante:
+Sea x el tamaño de la instalacion en pies cuadrados.
+Costos:
+1. Costo del terreno: 100x
+2. Costo de paneles solares: 250x
+3. Costo de mantenimiento: 100 + 100x
+Costo total: 100x + 250x + 100 + 100x = 450x + 100
+"""
+
+response = get_completion(prompt)
+print(response)
+
+
+prompt = f"""
+Tu tarea es determinar si la solucion del estudiante \
+es correcta o no.
+Para resolver el problema haz lo siguiente:
+- Primero, encuentra tu propia solucion al problema.
+- Luego compara tu solucion con la del estudiante \
+y evalua si la solucion del estudiante es correcta o no.
+No decidas si la solucion del estudiante es correcta \
+hasta que hayas resuelto el problema tu mismo.
+
+Pregunta:
+Estoy construyendo una instalacion de energia solar \
+y necesito ayuda para calcular los costos financieros.
+- El costo del terreno es de 100 dolares por pie cuadrado
+- Puedo comprar paneles solares por 250 dolares por pie cuadrado
+- Negocié un contrato de mantenimiento que me costara \
+100 dolares fijos al año, y 10 dolares adicionales \
+por pie cuadrado.
+¿Cual es el costo total para el primer año en funcion \
+del numero de pies cuadrados?
+
+Solucion del estudiante:
+Sea x el tamaño de la instalacion en pies cuadrados.
+Costos:
+1. Costo del terreno: 100x
+2. Costo de paneles solares: 250x
+3. Costo de mantenimiento: 100 + 100x
+Costo total: 100x + 250x + 100 + 100x = 450x + 100
+"""
+print("-------------------------------------------")
+response = get_completion(prompt)
+print(response)
+
+
+# --------------------------------------------
+# Alucinaciones
+# --------------------------------------------
+prompt = f"""
+Cuentame sobre el cepillo de dientes inteligente \
+AeroGlide UltraSlim de Boie.
+"""
+
+response = get_completion(prompt)
+print(response)
