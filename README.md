@@ -48,7 +48,24 @@ Desarrollo iterativo de prompts para generar copy de marketing.
 
 ---
 
-### ⏳ Lab 03 - Summarizing
+### ✅ Lab 03 - Summarizing
+Resumir reseñas de productos de ecommerce con enfoque específico.
+
+**Concepto principal:** El mismo texto puede resumirse de formas 
+diferentes según el departamento o propósito que lo necesite.
+
+**Ejercicios:**
+- Resumir con límite de palabras (máximo 30 palabras)
+- Resumir con enfoque en envío y entrega
+- Resumir con enfoque en precio y valor percibido
+- Extraer vs Resumir — diferencia clave entre ambos enfoques
+- Resumir múltiples reseñas con un loop automatizado
+
+**Aprendizaje clave:** Con un loop de Python puedes procesar 
+cientos de reseñas automáticamente — la diferencia entre usar 
+el chat manualmente y construir una aplicación real.
+
+---
 ### ⏳ Lab 04 - Inferring
 ### ⏳ Lab 05 - Transforming
 ### ⏳ Lab 06 - Expanding
