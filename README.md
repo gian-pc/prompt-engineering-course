@@ -66,7 +66,28 @@ cientos de reseñas automáticamente — la diferencia entre usar
 el chat manualmente y construir una aplicación real.
 
 ---
-### ⏳ Lab 04 - Inferring
+### ✅ Lab 04 - Inferring
+Inferir sentimientos, emociones y temas a partir de texto.
+
+**Concepto principal:** El modelo analiza un texto y deduce 
+información que no está explícitamente escrita — como detectar 
+emociones, sentimientos o temas sin entrenamiento previo.
+
+**Ejercicios:**
+- Detectar sentimiento positivo/negativo (respuesta completa vs una palabra)
+- Identificar emociones específicas del cliente
+- Detectar enojo para priorizar atención al cliente
+- Extraer producto y marca en formato JSON
+- Múltiples tareas en un solo prompt — más eficiente y económico
+- Inferir temas de un artículo de noticias
+- Crear alertas automáticas por tema — Zero-Shot Learning
+
+**Aprendizaje clave:** Con un solo prompt puedes reemplazar 
+semanas de trabajo de machine learning tradicional. 
+Zero-Shot Learning significa que el modelo clasifica 
+sin ejemplos previos — solo con el prompt.
+
+---
 ### ⏳ Lab 05 - Transforming
 ### ⏳ Lab 06 - Expanding
 ### ⏳ Lab 07 - Chatbot
