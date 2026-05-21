@@ -88,6 +88,29 @@ Zero-Shot Learning significa que el modelo clasifica
 sin ejemplos previos — solo con el prompt.
 
 ---
-### ⏳ Lab 05 - Transforming
+### ✅ Lab 05 - Transforming
+Transformar texto usando LLMs para múltiples propósitos.
+
+**Concepto principal:** Los LLMs pueden transformar texto 
+de una forma a otra — idioma, tono, formato o estilo — 
+con un solo prompt.
+
+**Ejercicios:**
+- Traducción básica entre idiomas
+- Detectar el idioma de un texto automáticamente
+- Traducir a múltiples idiomas en una sola llamada
+- Traducción formal e informal
+- Traductor universal con loop — mensajes de soporte en 5 idiomas
+- Transformación de tono — de jerga informal a carta formal
+- Conversión de formatos — JSON a tabla HTML
+- Corrección ortográfica y gramatical automática
+- Visualizar cambios con redlines
+- Mejorar estilo y tono de un texto
+
+**Aprendizaje clave:** Una tarea que antes requería código 
+complejo con expresiones regulares ahora se resuelve 
+con un solo prompt.
+
+---
 ### ⏳ Lab 06 - Expanding
 ### ⏳ Lab 07 - Chatbot
