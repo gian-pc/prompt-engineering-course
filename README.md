@@ -112,5 +112,27 @@ complejo con expresiones regulares ahora se resuelve
 con un solo prompt.
 
 ---
-### ⏳ Lab 06 - Expanding
+### ✅ Lab 06 - Expanding
+Generar texto largo a partir de texto corto — emails 
+de servicio al cliente personalizados.
+
+**Concepto principal:** Temperature — controla qué tan 
+predecible o creativo es el modelo en sus respuestas.
+
+**Ejercicios:**
+- Generar email de respuesta basado en reseña y sentimiento
+- Comparar temperature=0 vs temperature=0.7
+
+**Temperature:**
+| Valor | Comportamiento | Uso |
+|---|---|---|
+| 0 | Siempre igual | Producción, sistemas confiables |
+| 0.7 | Varía cada vez | Brainstorming, creatividad |
+| 1.0 | Muy aleatorio | Arte, poesía, contenido creativo |
+
+**Aprendizaje clave:** Para aplicaciones en producción 
+usa temperature=0. Para generación creativa usa 
+temperature más alta.
+
+---
 ### ⏳ Lab 07 - Chatbot
