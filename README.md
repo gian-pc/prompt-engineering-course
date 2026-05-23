@@ -135,4 +135,30 @@ usa temperature=0. Para generación creativa usa
 temperature más alta.
 
 ---
-### ⏳ Lab 07 - Chatbot
+### ✅ Lab 07 - Chatbot
+Construir un chatbot personalizado usando el formato de chat.
+
+**Concepto principal:** El modelo NO tiene memoria real. 
+Lo que parece "memoria" es que en cada llamada se envía 
+todo el historial de la conversación completo.
+
+**Los 3 roles del formato de chat:**
+- system — instrucciones generales, el usuario no lo ve
+- user — mensajes del usuario
+- assistant — respuestas del modelo
+
+**Ejercicios:**
+- Demostrar que el modelo no tiene memoria sin historial
+- Demostrar que con historial completo sí "recuerda"
+- Construir OrderBot — chatbot de pedidos de pizza
+- Generar resumen JSON del pedido automáticamente
+
+**Aprendizaje clave:** El contexto crece con cada mensaje. 
+El modelo siempre recibe toda la conversación completa 
+en cada llamada — así funciona la "memoria" de un chatbot.
+
+---
+
+## 🎉 Curso completado
+Todos los labs del curso ChatGPT Prompt Engineering 
+for Developers han sido completados exitosamente.
